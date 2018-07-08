@@ -4,6 +4,7 @@
   "homepage": "http://jbeliar.github.io/react-issues",
   "private": true,
   "dependencies": {
+    "@octokit/rest": "^15.9.4",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
