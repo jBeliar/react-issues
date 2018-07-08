@@ -2,10 +2,16 @@
   border: solid 1px grey;
   margin: 1px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.issue:hover {
+.issue-main {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+}
+
+.issue-main:hover {
   cursor: pointer;
   background-color: grey;
 }

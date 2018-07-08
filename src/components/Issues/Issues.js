@@ -18,7 +18,6 @@ class Issues extends Component {
   }
 
   render() {
-    console.log(this.state.issues[0])
     return (
       <div className='issues-container'>
         {this.state.issues.map(issue =>
