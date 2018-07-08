@@ -11,7 +11,7 @@ export const fetchAll = () => {
   return octokit.issues.getForRepo({
     owner: 'facebook',
     repo: 'react',
-  
+    state: 'all',
     per_page: 100,
     since: getISODate(7)
     // , milestone, state, assignee, creator, mentioned, labels, sort, direction, since, per_page, page

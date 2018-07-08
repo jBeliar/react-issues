@@ -1,3 +1,4 @@
-.App {
-  text-align: center;
+.issues-container {
+  width: 70vw;
+  overflow-y: auto;
 }

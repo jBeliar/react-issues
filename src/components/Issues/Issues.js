@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Issues.css';
 
+import Issue from '../issue/Issue';
 import { fetchAll } from '../../services/fetchIssue';
 
 class Issues extends Component {
@@ -13,14 +14,19 @@ class Issues extends Component {
   }
 
   componentDidMount() {
-    fetchAll().then(issues => this.setState({issues: issues}) )
+    fetchAll().then(issues => this.setState({issues}) )
   }
 
   render() {
     console.log(this.state.issues[0])
     return (
-      <div>
-        {this.state.issues.map(issue => issue.title)}
+      <div className='issues-container'>
+        {this.state.issues.map(issue =>
+          <Issue key={issue.id}
+            title={issue.title}
+            state={issue.state}
+            description={issue.body}/>
+        )}
       </div>
     );
   }

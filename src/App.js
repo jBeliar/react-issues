@@ -6,7 +6,9 @@ import Issues from './components/issues/Issues'
 class App extends Component {
   render() {
     return (
-      <Issues/>
+      <div className='App-container'>
+        <Issues/>
+      </div>
     );
   }
 }

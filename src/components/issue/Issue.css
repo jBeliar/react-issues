@@ -1,0 +1,27 @@
+.issue {
+  border: solid 1px grey;
+  margin: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.issue:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.issue-state {
+  border: solid 1px grey;
+  /* margin-right: 10px; */
+  max-width: 50px;
+  min-width: 50px;
+  color: white;
+}
+
+.issue-state--open {
+  background-color: green;
+}
+
+.issue-state--closed {
+  background-color: red;
+}
