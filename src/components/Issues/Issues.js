@@ -14,7 +14,10 @@ class Issues extends Component {
   }
 
   componentDidMount() {
-    fetchAll().then(issues => this.setState({issues}) )
+    fetchAll().then(issues => {
+      console.log(issues)
+      this.setState({issues})
+    } )
   }
 
   render() {
